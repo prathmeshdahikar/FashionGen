@@ -1,6 +1,5 @@
 torch
 torchvision
-cudatoolkit
 pillow
 ffmpeg
 tqdm
