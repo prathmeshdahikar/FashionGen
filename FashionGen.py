@@ -1,5 +1,4 @@
 import streamlit as st
-from IPython.utils import io
 import torch
 import PIL
 import numpy as np
