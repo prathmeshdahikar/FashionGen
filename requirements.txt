@@ -2,7 +2,6 @@ torch
 torchvision
 pillow
 streamlit
-streamlib
 ffmpeg
 tqdm
 scipy
