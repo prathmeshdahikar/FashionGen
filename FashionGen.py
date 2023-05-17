@@ -1,10 +1,7 @@
 import streamlit as st
 import torch
-import PIL
 import numpy as np
-import ipywidgets as widgets
 from PIL import Image
-import imageio
 from models import get_instrumented_model
 from decomposition import get_or_compute
 from config import Config
