@@ -157,8 +157,10 @@ c3 = st.sidebar.slider("Coat", min_value=slider_min_val, max_value=slider_max_va
 c4 = st.sidebar.slider("Graphic Elements", min_value=slider_min_val, max_value=slider_max_val, value=0)
 c5 = st.sidebar.slider("Darker Color", min_value=slider_min_val, max_value=slider_max_val, value=0)
 c6 = st.sidebar.slider("Modest Neckline", min_value=slider_min_val, max_value=slider_max_val, value=0)
-start_layer = st.sidebar.number_input("Start Layer", value=0)
-end_layer = st.sidebar.number_input("End Layer", value=14)
+start_layer = 0
+end_layer = 14
+#start_layer = st.sidebar.number_input("Start Layer", value=0)
+#end_layer = st.sidebar.number_input("End Layer", value=14)
 
 # Call the function with the UI input values and display the output images
 input_im, output_im = generate_image(seed1, seed2, content, style, truncation, c0, c1, c2, c3, c4, c5, c6, start_layer, end_layer)
