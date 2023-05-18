@@ -1,5 +1,6 @@
 torch
 torchvision
+gdown
 pillow
 streamlit
 ffmpeg
