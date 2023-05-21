@@ -70,8 +70,8 @@ class BaseModel(AbstractBaseClass, torch.nn.Module):
         out = self.model.forward(x)
         return 0.5*(out+1)
 
-    # Generate images and convert to numpy
-    def sample_np(self, z=None, n_samples=1, seed=None):
+    # Generate images
+    def sample(self, z=None, n_samples=1, seed=None):
         if z is None:
             z = self.sample_latent(n_samples, seed=seed)
         elif isinstance(z, list):
@@ -79,8 +79,8 @@ class BaseModel(AbstractBaseClass, torch.nn.Module):
         elif not torch.is_tensor(z):
             z = torch.tensor(z).to(self.device)
         img = self.forward(z)
-        img_np = img.permute(0, 2, 3, 1).cpu().detach().numpy()
-        return np.clip(img_np, 0.0, 1.0).squeeze()
+        return img
+
 
     # For models that use part of latent as conditioning
     def get_conditional_state(self, z):
