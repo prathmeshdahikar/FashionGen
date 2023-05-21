@@ -13,3 +13,4 @@ requests
 nltk
 fbpca
 pyopengltk
+stqdm
