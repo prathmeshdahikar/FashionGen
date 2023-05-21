@@ -14,7 +14,7 @@ from torchvision.transforms import Resize, Normalize, Compose, CenterCrop
 from torch.optim import Adam
 from stqdm import stqdm
 
-torch.set_num_threads(8)
+#torch.set_num_threads(8)
 
 # Speed up computation
 torch.autograd.set_grad_enabled(True)
