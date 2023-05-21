@@ -175,7 +175,7 @@ def generate_image(content, style, truncation, c0, c1, c2, c3, c4, c5, c6, start
     
 # Streamlit app title
 st.title("FashionGen Demo - AI assisted fashion design")
-""""This application employs the StyleGAN framework, CLIP and GANSpace exploration techniques to synthesize images of garments from textual inputs. With training based on the comprehensive LookBook dataset, it supports an efficient fashion design process by transforming text into visual concepts, showcasing the practical application of Generative Adversarial Networks (GANs) in the realm of creative design.""""
+"""This application employs the StyleGAN framework, CLIP and GANSpace exploration techniques to synthesize images of garments from textual inputs. With training based on the comprehensive LookBook dataset, it supports an efficient fashion design process by transforming text into visual concepts, showcasing the practical application of Generative Adversarial Networks (GANs) in the realm of creative design."""
 
 @st.cache_resource
 def load_model():
