@@ -15,3 +15,4 @@ fbpca
 pyopengltk
 stqdm
 ftfy
+streamlit-extras
